@@ -4,10 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "watch": "watchify js/main.js -t babelify -o bundle.js -dv"
+    "watch": "NODE_ENV=production watchify js/main.js -t babelify -o bundle.js -dv",
+    "minify": "minify bundle.js"
   },
   "author": "pieroit",
-  "license": "MIT",
+  "license": "GPL",
   "dependencies": {
     "bootstrap": "^3.3.7",
     "d3": "^3.5.17",
